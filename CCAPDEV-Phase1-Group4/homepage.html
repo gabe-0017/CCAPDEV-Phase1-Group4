@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Laboratory Reservation System</title>
+
+    <link rel="stylesheet" href="css/styles.css"> <!-- belongs to the 'css' subfolder -->
+</head>
+<body>
+
+    <!-- nav bar -->
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">LabReserve</h1>
+
+            <ul class="nav-links">
+                <li><a href="homepage.html">Home</a></li> <!-- belongs to the main folder (CCAPDEV-Phase1-Group4) -->
+                <!-- |                                          | -->
+                <!-- | these html files are not yet implemented | -->
+                <!-- V                                          V -->
+                <li><a href="pages/labs.html">Laboratories</a></li>
+                <li><a href="pages/schedule.html">Schedule</a></li>
+                <li><a href="pages/reservation.html">Reserve</a></li>
+                <li><a href="pages/my-reservations.html">My Reservations</a></li>
+                <li><a href="pages/login.html">Login</a></li>
+                <!-- Ʌ                                       Ʌ -->
+                <!-- | these belong to the 'pages' subfolder | -->
+                <!-- |                                       | -->
+            </ul>
+        </nav>
+    </header>
+
+    <!-- main -->
+    <main class="container">
+
+        <section class="page-title">
+            <h2>Welcome to the Computer Laboratory Reservation System</h2>
+            <p>Reserve labs quickly and efficiently.</p>
+        </section>
+
+        <!-- sample content -->
+        <div class="card">
+            <h3>Reserve a Laboratory</h3>
+
+            <form onsubmit="submitReservation(); return false;">
+
+                <label>Choose Laboratory:</label><br>
+                <select required>
+                    <option>Lab 1</option>
+                    <option>Lab 2</option>
+                    <option>Lab 3</option>
+                    <option>Lab 4</option>
+                    <option>Lab 5</option>
+                </select>
+
+                <br><br>
+
+                <label>Date:</label><br>
+                <input type="date" required>
+
+                <br><br>
+
+                <label>Time:</label><br>
+                <input type="time" required>
+
+                <br><br>
+
+                <button class="btn">Reserve</button>
+
+            </form>
+        </div>
+    </main>
+</body>
+</html>
