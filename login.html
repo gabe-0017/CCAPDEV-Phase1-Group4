@@ -35,6 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var password= document.getElementById("password");
 
     if(name.value=="Teacher" && password.value==1){
+        sessionStorage.setItem("username", name);
             window.location.replace("homepage.html");
     }
     
@@ -45,5 +46,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+
+
 </script>
+
 </html>
