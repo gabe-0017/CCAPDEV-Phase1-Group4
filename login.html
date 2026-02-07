@@ -1,0 +1,49 @@
+<DOCTYPE! html>
+<html lang="en">
+
+
+<head>
+<title>Login Page</title>
+<link rel="stylesheet" href="styles.css"> <!-- belongs to the 'css' subfolder -->
+</head>
+
+
+
+<body>
+    <form class="login">
+        <label>Username:</label>
+        <br>
+<input type="text" class="input" id="username" required name="username">
+<br>
+<label>Password:</label>
+<br>
+<input type="password" class="input" required  id="password" name="password">
+<br>
+<button class="btn" type="submit" id="logbtn">Login</button>
+
+    </form>
+
+</body>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  document.getElementById("logbtn").addEventListener("click", function () {
+
+    event.preventDefault();
+    var name= document.getElementById("username");
+    var password= document.getElementById("password");
+
+    if(name.value=="Teacher" && password.value==1){
+            window.location.replace("homepage.html");
+    }
+    
+  })
+
+
+})
+
+
+
+</script>
+</html>
