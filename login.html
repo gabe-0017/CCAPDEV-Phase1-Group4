@@ -9,20 +9,33 @@
 
 
 
-<body>
+<body class="login">
+
+  <div class="wrap">
     <form class="login">
+      <h1>Login</h1>
+
+            <div class="usernamebox">
         <label>Username:</label>
-        <br>
+       
 <input type="text" class="input" id="username" required name="username">
-<br>
+
+</div>
+
+
+<div class="passwordbox">
 <label>Password:</label>
-<br>
-<input type="password" class="input" required  id="password" name="password">
-<br>
+
+<input type="password" class="input" required  id="password" name="password">  
+</div>
+
 <button class="btn" type="submit" id="logbtn">Login</button>
 
     </form>
+  </div>
+             
 
+   
 </body>
 
 <script>
@@ -46,8 +59,5 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-
-
 </script>
-
 </html>
